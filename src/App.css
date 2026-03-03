@@ -62,6 +62,11 @@
   text-align: right;
 }
 
+.placeholder-text {
+  color: #aaa;
+  font-style: italic;
+}
+
 .diff-pane .pane-card {
   background-color: #ededed;
 }

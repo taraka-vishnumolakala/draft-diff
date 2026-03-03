@@ -1,8 +1,4 @@
-import { useState } from 'react'
-
-function EditorPane() {
-  const [text, setText] = useState('')
-
+function EditorPane({ text, onTextChange }) {
   // trim() removes leading/trailing whitespace, then split(/\s+/) splits on
   // one or more whitespace characters (spaces, tabs, newlines) into an array
   // of words. Empty string check avoids [''].length returning 1 on blank input.
@@ -14,7 +10,7 @@ function EditorPane() {
         <textarea
           className="editor-textarea"
           value={text}
-          onChange={(e) => setText(e.target.value)}
+          onChange={(e) => onTextChange(e.target.value)}
           placeholder="Start writing..."
         />
         <div className="editor-footer">
