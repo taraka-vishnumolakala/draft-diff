@@ -1,0 +1,41 @@
+.app {
+  display: flex;
+  height: 100vh;
+  gap: 1px;
+  background-color: #d5d5d5;
+}
+
+.app > .right-column {
+  border-left: 1px solid #bbb;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.pane {
+  flex: 1;
+  background-color: #d5d5d5;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  overflow-y: auto;
+}
+
+.pane-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 900px;
+  min-height: 100%;
+  padding: 3rem 2.5rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.diff-pane .pane-card {
+  background-color: #ededed;
+}
+
+.vocab-pane .pane-card {
+  background-color: #e8ecf0;
+}
